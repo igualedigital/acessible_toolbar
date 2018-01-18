@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+	<title>Barra de acessibilidade - demonstração</title>
+	<link rel="shortcut icon" href="http://digital.iguale.com.br/assets/favicon.ico">
+	<!-- page CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/accessibility.css">
+	
+	<!--jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
+		
+		<!-- + acessibilidade -->
+    	<script src="http://arquivos.weblibras.com.br/auto/wl-min.js"></script>
+		<script src="../assets/js/polyfills.js"></script>
+		<script src="../assets/js/jquery.cookie.js"></script>
+		<script src="../assets/js/acessivel.js" ></script>
+
+		<script type="text/javascript">
+		
+		$(document).ready(init);
+		
+		function init(){
+
+			// @param1: toolbar / @param2: avatar libras / @param3: color Options
+			// ColorOption 1: Background: White |Foreground: Black // default set
+			// ColorOption 2: Background: Black |  Foreground: White
+			// ColorOption 3: Background: Gray | Foreground: Black
+
+			acessibleAssets.acessibilize(true,true,'body',1);
+			
+			// add buttom on left page to scroll page to top
+			acessibleAssets.scrollToTopPage(true);
+
+			// add footer certification buttons
+			acessibleAssets.validatorsItens('footer','before',true);
+
+			// tests for custom bar look and feel
+			$("#cT1").click(function(){
+				$("body").children("#acessibleToolBar").remove();
+				acessibleAssets.acessibilize(true,true,'body',1);
+				return;
+			})
+
+			$("#cT2").click(function(){
+				$("body").children("#acessibleToolBar").remove();
+				acessibleAssets.acessibilize(true,true,'body',2);
+				return;
+			})
+
+			$("#cT3").click(function(){
+				$("body").children("#acessibleToolBar").remove();
+				acessibleAssets.acessibilize(true,true,'body',3);
+				return;
+			})
+			
+		}		 
+		
+		</script>
+    <!-- - acessibilidade -->
+
+</head>
+
+<body>
+
+<!-- Html tool Bar -->
+
+	<header class="page-header" style="background-image: url(acessibilidade-conceito.jpg)"></header>
+		<nav aria-label="Menu principal"  accesskey="2" class="mainnav" id="mainNavigation">
+			<ul>
+				<li><a href="http://iguale.com.br" target="_blank">Conheça a Iguale</a></li>
+				<li><a href="http://www.w3c.br/Home/WebHome"  target="_blank">W3C</a></li>
+				<li><a href="https://www.w3.org/WAI/intro/wcag"  target="_blank">WCAG 2.0</a></li>
+				<li><a href="https://www.google.com.br"  target="_blank">Google</a></li>
+			</ul>
+		</nav>
+	
+	<div class="content-container">
+	<main class="main-content">
+
+	<section aria-label="Conteúdo Principal"  accesskey="1" id="mainContent">
+
+		<h1>Página para demonstração da Barra de acessibilidade. Teste!</h1>
+		<P>
+			A barra de acessibilidade oferece alguns recursos para melhorar a acessibilidade do seu site. 
+ Os recursos presentes na barra de acessibilidade atuam de forma similar as ferramentas nativas existentes nos principais Navegadores Web e Sistemas operacionais.
+ <br><br>
+			A Barra de acessibilidae, conta com os seguintes recursos.
+			
+		</p>
+		<ul>
+			<li><strong>Personalização</strong>
+			<br>
+			A Barra de acessibilidade da Iguale Digital oferece o recurso de personalização para adequar-se a paleta de cores do site na qual ela é implementada.
+			<br><br>
+			Personalize:<br><br>
+			<button id="cT1" value="Testar"> Testar - Opção 1</button> Fundo Branco > Texto em Preto. (padrão)<br><br>
+			<button id="cT2" value="Testar"> Testar - Opção 2</button> Fundo Preto > Texto em Branco.<br><br>
+			<button id="cT3" value="Testar"> Testar - Opção 3</button> Fundo Cinza > Texto em Preto.<br><br>
+
+			</li>
+
+			<li><strong>Atalho para o conteúdo principal</strong>
+			<br>Fornece um atalho direto ao conteúdo principal da página, é importante principalmente para usuários com necessidades especiais que utiliam
+			leitores de tela, evitando a necessidade de navegar em todo o fluxo da página até que encontre o conteúdo principal.<br><br>
+
+			</li>
+			<li><strong>Atalho para o navegação principal</strong><br>
+			Como no atalho do "conteúdo principal", o atalho para o menu principal tem a função de tornar o acesso ao principal menu de navegação do site
+			algo objetivo para o usuário com necessidades especiais.<br><br>
+			</li>
+			<li><strong>Aumento e normalização do texto</strong><br>
+			O Objetivo deste recurso é oferecer suporte direto aos usuários com baixa visão. Ele aumenta em 2x o tamanho do texto existente na página,
+			para facilitar a leitura. O recurso possuí apenas duas funções, aumentar e normalizar, que retorna os textos ao tamanho originalmente definido
+			pelo criador do site.<br><br>
+			</li>
+			<li><strong>Contraste</strong><br>
+			O recurso de alto contraste oferece suporte e benefícios a usuários com baixa visão e outras deficiências visuais.<br>
+			Invertendo cores e ajustando o constraste natural dos elementos da página.<br><br>
+			</li>
+			<li><strong>Atalhos</strong><br>
+			Contém informações relevantes dos principais disponíveis para navegação rápida via teclado, nos principais navegadores e sistemas operacionais.<br><br>
+			</li>
+		</ul>
+			</section>
+		<section>
+		
+		<h1>Comportamento dos elementos de um página.</h1>
+		<p>
+		Abaixo, estão os princiapis elementos de uma página HTML, parágragos, listas, títulos, formulários.<br>
+		Para demonstrar como o uso da barra de acessibilidade afeta esses elementos para facilitar e melhorar a experiência de pessoas com deficência na utilização do seu site.
+		
+		</p>
+		<h2>Imagem (Títulos H2)</h2>
+		<p>A imagem abaixo, contém uma descrição detalhada do seu conteúdo em formato texto que pode ser lido (ouvido) através de leitores de tela.
+			<br> Deixando o cursor do mouse sobre a imagem, você verá uma frase simples que exibe informações básicas sobre a imagem.
+		</p>
+		<img class="img-demo" src="dali.jpg" alt="Uma pintura em porta retrato de Gala Dali, esposa de Salvador Dali um artista espanhol surrealista. No quadro uma mulher em perfil, olhos fechados e um semblante de conforto. em seu ombro aparecem apoiadas duas costelas de cordeiro. A obra: The Persistence of Memory é de 1931 " title="The Persistence of Memory,1931 - Salvador Dali">
+	
+			<h2>Acessibilidade (Títulos H2)</h2>
+			<p>Acessibilidade consiste na possibilidade de acesso a um lugar ou conjunto de lugares. Significa não apenas permitir que pessoas com deficiência ou mobilidade reduzida participem de atividades que incluem o uso de produtos, serviços e informação, mas a inclusão e extensão do uso destes por todas as parcelas presentes em uma determinada população, visando sua adaptação e locomoção, eliminando as barreiras, consiste também em ter acesso a todo e qualquer material produzido, em áudio ou vídeo, para tanto adaptando todos os meios que a tecnologia permite.</p>
+			<h3>Na informática (Títulos H3)</h3>
+			<p>Em informática, programas que provêm acessibilidade são ferramentas ou conjuntos de ferramentas que permitem que pessoas com deficiência (as mais variadas) se utilizem dos recursos que o computador oferece. Essas ferramentas podem constituir leitores de ecrã como o Virtual Vision, JAWS e o Dosvox, para deficientes visuais, teclados virtuais para pessoas com deficiência motora ou com dificuldades de coordenação motora, e sintetizadores de voz para pessoas com problemas de fala.</p>
+			<h4>audiodescrição (Títulos H4)</h4>
+			<p>Audiodescrição é a uma faixa narrativa adicional para os cegos e deficientes visuais consumidores de meios de comunicação visual, onde se incluem a televisão e o cinema, a dança, a ópera e as artes visuais. Consiste num narrador que fala durante a apresentação, descrevendo o que está a acontecer no ecrã durante as pausas naturais do áudio e por vezes durante diálogos, quando considerado necessário.</p>
+			<h5>Tecnologias Assistivas (Títulos H5) </h5>
+			<p>Tecnologia assistiva são recursos e serviços que visam facilitar o desenvolvimento de atividades diárias por pessoas com deficiência. Procuram aumentar as capacidades funcionais e assim promover a independência e a autonomia de quem as utiliza</p>
+			<h6>Título h6: Objetivo desta página. (Títulos H6)</h6>
+			<p>O objetivo deta página é demonstrar a utilização e os recursos da barra de ferramentas de suporte a acessibilidade.</p>
+			
+	
+	</section>
+
+<section>
+
+	<h1>Formulários (Títulos H1)</h1>
+	<p>Exemplo de elementos de formulário acessíveis<br>
+	Foco e destaque sobre os campos, identificação de cada campo do formulário.
+	</p>
+	<form onsubmit="return false">
+	<fieldset> 
+	<legend>Dados pessoais (identificação do formulário)</legend> 
+	<div> 
+	
+	<label for="nome">Nome
+	<input id="nome" name="nome" placeholder="Informe seu primeiro nome" required="" type="text"> 
+	</label>
+	</div>
+
+	<div> 
+	<label for="email">Email 
+	<input id="email" name="email" placeholder="exemplo@iguale.com.br" required="" type="email">
+	</label> 
+	</div> 
+	
+	<div> 
+	<label for="url">URL 
+	<input id="url" name="url" placeholder="http://meusite.com.br" type="url">
+	</label> 
+	</div>    
+	
+	<div> 
+	<label for="telefone">Telephone 
+	<input id="telefone" name="telefone" placeholder="Ex. +447000 000000" required="" type="tel">
+	</label> 
+	</div> 
+	
+	<div>
+	<label for="numbers">Números
+	<input id="numbers" name="numbers" min="5" max="18" step="0.5" value="9" type="number">
+	</label>
+	</div>
+	
+	<div>
+	<label for="escala">Escala (1 - 100)
+	<input id="escala" name="escala" min="1" max="100" value="0" type="range" step="1" oninput="output.value=escala.value">
+	</label>
+	<label for="output">
+		Escala:
+	<output for="escala" id="output" name="output" >0</output>
+	</label>
+	</div>
+	
+	<div>
+		<button type="submit">Testar</button>
+	</div>
+
+	</fieldset>
+	</form>
+</section>
+	<div class="cls"></div>
+	
+</main>
+
+	<aside>
+		<h1>Iguale Digital</h1>
+		<img class="logo-iguale-digital" src="http://digital.iguale.com.br/assets/logo-iguale-digital.png" width="171" height="171" alt="Logotipo da Iguale Digital - Um círculo azul escrito Iguale no centro e digital logo abaixo alinhando a direita." title="Iguale Digital">
+		<p>
+			A <strong>Iguale Digital</strong> faz parte do núcelo da Iguale Comunicação de Acessibilidade, que 
+			fornece soluções profissionais em audiovisual e comunicação acessível. <br><br>
+			Trabalhamos especialmente com tecnologia e internet.<br>
+			Temos como missão ajudar indíduos e empresas a tornar seu conteúdo acessível para pessoas com 
+			necessidades especiais.<br><br>
+			Remover barreiras e tornar o acesso a informação universal faz parte do nosso
+			dia-a-dia.<br><br>
+			Buscamos sempre colaborar e contribuir para expandir o potencial das pessaos com 
+			deficiência, oferecendo conhecimento, ferramentas e estratégias para que as empresas
+			e indivíduos possam produzir tecnologia e conteúdo para pessoas com dficiência.
+			<hr>
+
+			<h2>Contato e localização</h2>
+			<p>
+				Rua Girasol, 34,cj.73 - Vila Madalena<br>
+				São Paulo / SP<br><br>
+				Fone: (11) 2592-2957<br>
+				e-mail: <a href="mailto:web@iguale.com.br">web@iguale.com.br</a>
+			</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.292004676904!2d-46.68932818444946!3d-23.557953867352843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5799c990a6e9%3A0x654cd89612728b39!2sR.+Girassol%2C+34+-+Vila+Madalena%2C+S%C3%A3o+Paulo+-+SP%2C+05433-000!5e0!3m2!1spt-BR!2sbr!4v1495811575133" width="300" height="250"  style="border:0" allowfullscreen></iframe>
+			
+			
+	
+	</aside>
+	<div class="cls"></div>
+	</div>
+
+	<footer id="footer">
+	
+		<p> Feito com <i class="fa fa-heart" aria-hidden="true"></i> Iguale Digital <i class="fa fa-creative-commons" aria-hidden="true"></i></p>
+	</footer>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77000973-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+</html>

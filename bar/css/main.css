@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html,body{
+    background-color: #ccc;
+    font:.9rem "Open Sans";
+}
+
+a{
+    text-decoration: none;
+    color:#0000FF;
+}
+a:hover{
+    color: #0F5672;
+    text-decoration: underline;
+}
+a:visited{
+    color:none;
+    text-decoration:none;
+}
+img{
+    border:1px solid #666;
+}
+
+.page-header{  
+    background-color: #464646;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  width: auto;
+  height: 210px;
+  }
+
+.mainnav{
+    font-size: 16px;
+    font-weight: 30px;
+    text-transform: uppercase;
+    background-color: #333;
+    width: 100%;
+}
+.mainnav ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+     width: 1060px;
+}
+
+.mainnav li {
+    display: block;
+}
+
+.mainnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainnav li a:hover {
+    background-color: #111;
+}
+
+.content-container{
+    box-sizing: content-box;
+    margin: 0 auto;
+    max-width: 1060px;
+    min-height: 460px;
+    background-color: #fff;
+}
+.main-content{
+    width: 60%;
+    float:left;
+    margin: 5px 25px 0 0;
+    background-color: #fff;
+    /*border:1px solid #ccc;*/
+    padding:10px;
+}
+
+section{
+    float:left;
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+aside {
+      float:right;
+      width: 30%;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      background-color: #eff0f1;
+      padding:5px;
+      margin:5px 0 15px;
+     
+    }
+aside h1{
+    text-align: center;
+}
+footer{
+    background-color: #0F5672;
+    min-height: 40px;
+    border-top:1px solid #000;
+    margin:10px 0 0 0;
+    text-align: center;
+    color:#fff;
+}
+footer p{
+    margin: 0;
+    padding:5px;
+}
+.cls{
+    clear:both;
+}
+
+iframe{
+    width: 100%;
+}
+/* form demo */
+input,select{
+    margin-bottom:1rem;
+}
+label,input,select{
+    display: block;
+}
+h1{
+    font-size: 1.8rem;
+}
+h2,h3,h4,h5,h6{
+    font-size: 1.5rem;
+}
+.img-demo{
+    width: 100%;
+    height: 100%;
+}
+.logo-iguale-digital{
+
+    border:none;
+    display: block;
+    width: 100%;
+    height:100%;
+    max-width: 171px;
+    max-height: 171px;;
+    margin: 0 auto;
+
+}
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+    .main-content{ 
+        width: 90%;
+        margin:0 auto;
+        float:none;
+        }
+     aside{
+        width:90%;
+        margin:0 auto;
+        float:none;
+     }
+     .mainnav ul{
+         display: inline;
+     }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+/*@media (min-width:481px) {}*/
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px) {
+    .mainnav ul{display: flex;}
+    
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:600px) {
+    .mainnav ul{display: flex;}
+
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) {
+    .mainnav ul{display: flex;}
+}
+/* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px) {
+       .main-content{
+    width: 66%;
+    float:left;
+}
+    aside {
+        float:right;
+        width: 29%;
+        margin: 10px;
+        }
+.mainnav ul{display: flex;}
+  
+    
+}
+/* hi-res laptops and desktops */ 
+@media (min-width:1280px) {
+    .main-content{
+    width: 66%;
+    float:left;
+}
+aside {
+        float:right;
+        width: 29%;
+        margin: 10px;
+         }
+.mainnav ul{display: flex;}
+  
+
+}
+
+

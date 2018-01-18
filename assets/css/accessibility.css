@@ -1,0 +1,453 @@
+/* .acessivel_toolbar{ display: flex;}*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+.acessivel_navbar{
+    border-bottom:2px solid #0F5672;
+    background-color: #fff;
+    color:#000;
+    width: 100%;
+   /* height: 60px;*/
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.acessivel_navbar nav{
+    display: flex;
+    justify-content: center;
+}
+.acessivel_navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        /*justify-content: center;*/
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+.acessivel_navbar  li{
+    display: block;
+    padding: 0 1rem 0 1rem;
+    font:1rem Ubuntu;
+   /* line-height: 60px;*/
+   padding: 6px;
+}
+
+.acessivel_navbar li a {
+    
+    color:#000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.acessivel_navbar li a:hover {
+    text-decoration: underline;
+}
+
+/*Set new focus for all elemments*/
+
+.acessivel_navbar li a:focus { 
+    outline: thin dotted #666666;
+    background-color: #FFFF00;
+    color:#000;
+}
+
+
+
+
+/*Color sets for tool bar */
+
+/*Set 1: Background: White | Foreground: Black */
+.toolbar-colorset1{
+    background-color: #fff;
+    color:#000;
+}
+.toolbar-colorset1 li a {
+    color:#000;
+}
+.toolbar-colorset1 li a:focus { 
+    background-color: #FFFF00;
+    color:#000;
+}
+
+.icon-equal {
+  background: url('../img/icon-equal.png') no-repeat 0px 0px;
+  width: 14px;
+  height: 14px;
+  display:block;
+}
+
+.icon-equal:hover {
+   background-position: 0px -14px;
+}
+
+
+/*Set 2: Background: Black | Foreground: White */
+
+.toolbar-colorset2{
+    background-color: #000 !important;
+    color:#fff !important;
+}
+.toolbar-colorset2 li a {
+    color:#fff !important;
+}
+.toolbar-colorset2 li a:hover{
+   text-decoration: underline;
+   color:#000!important;
+}
+.toolbar-colorset2 li a:focus { 
+    background-color: #FFFF00 !important;
+    color:#000 !important;
+}
+
+.icon-equal2 {
+  background: url('../img/icon-equal2.png') no-repeat 0px 0px;
+  width: 14px;
+  height: 14px;
+  display:block;
+}
+
+.icon-equal2:hover {
+   background-position: 0px -14px;
+}
+
+
+/*Set 3: Background: Gray | Foreground: Black */
+
+.toolbar-colorset3{
+    background-color: #ccc!important;
+    color:#000!important;
+}
+.toolbar-colorset3 li a {
+    color:#000!important;
+}
+.toolbar-colorset2 li a:hover{
+   text-decoration: underline;
+   color:#000!important;
+}
+.toolbar-colorset3 li a:focus { 
+    background-color: #FFFF00;
+    color:#000!important;
+}
+
+.icon-equal3 {
+  background: url('../img/icon-equal3.png') no-repeat 0px 0px;
+  width: 14px;
+  height: 14px;
+  display:block;
+}
+
+.icon-equal3:hover {
+   background-position: 0px -14px;
+}
+
+/* Certifications List (footer) */
+
+.acessibility-certifications-list{
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /*max-height: 32px;*/
+        padding:10px;
+
+}
+.acessibility-certifications-list img{
+    border:1px solid #ccc;
+   
+}
+/*.acessibility-certifications-list ul{}*/
+
+.acessibility-certifications-list li{
+    background-color: yellow;
+    list-style:none;
+    display: inline;
+    margin: 0 5px 0 5px;
+    height: 32px;
+}
+/* Certifications List (footer) */
+
+/*+ acessibility-Scroll-to-top*/
+.acc-scrollToTop{
+    width:30px;
+	height:30px; 
+	text-align:center; 
+	background: whiteSmoke;
+    font-size: 0px;
+    font-weight: bold;
+	text-decoration: none;
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	display:none;
+	background: url('../img/acc-to-top-b.png') no-repeat 0px 0px;
+}
+.acc-scrollToTop:hover{
+	text-decoration:none;
+}
+/*- acessibility-Scroll-to-top*/
+
+/*modal box: orientacoes de acessiblidade / atalhos*/
+
+.infoAcessibilidade{
+     font:1.2rem Ubuntu;
+     
+   
+}
+.infoAcessibilidade h1{
+    margin:0 0 0.8rem;
+}
+
+.infoAcessibilidade h2{
+    margin:.8rem 0 .8rem;
+}
+
+.infoAcessibilidade p{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+
+.infoAcessibilidade ul{
+    list-style: none;
+    padding:0;
+    margin: 1rem 0 1rem 1rem;
+}
+.infoAcessibilidade li{
+    font:1rem Ubuntu;
+    margin: 0 0 5px 0;
+}
+
+/* + accessible dialog box */
+/*.vashadow {
+	background-color: black;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}*/
+
+.vdialog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    top:0;
+    left: 0;
+    position: fixed;
+
+}
+.vashadow {
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+    height:100%;
+}
+
+
+/*.vadialog {
+	background: white;
+	border-radius: 10px;
+	display: none;
+	position: fixed;
+	left:50%;
+	top:50%;
+	padding:40px;
+    margin:10px;
+}*/
+
+.vadialog {
+	background: white;
+	border-radius: 10px;
+    max-width: 50%;
+    padding:40px;
+    margin: 40px 0 40px 0;
+}
+
+.vaCloseButton {
+	float:right;
+	color:#999999;
+	border:none;
+	padding:0;
+	margin-right:-35px;
+	margin-top:-35px;
+	background: white;
+	cursor:pointer;
+}
+
+.vaCloseButton:focus{
+	outline:2px solid #999999;
+}
+
+.vaOffscreen{
+	position:absolute;
+	left:-9999px;
+}
+/* - accessible dialog box */
+
+/* + acessible focus */
+
+.focus--keyboard, a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  border-color: #143E4A;
+  box-shadow: 0 0 6px 2px #0F5672;
+  outline: none; }
+
+.focus--mouse, a.focus--mouse:focus, button.focus--mouse:focus, input.focus--mouse:focus, select.focus--mouse:focus, textarea.focus--mouse:focus {
+  border-color: #143E4A;
+  box-shadow: 0 0 6px 2px #0F5672;
+  outline: none; 
+  }
+
+  /* - acessible focus*/
+
+
+  /* + HIGH CONTRAST + */
+
+.icon-equal-hc {
+  background: url('../img/icon-equal-hc.png') no-repeat 0px 0px;
+  width: 14px;
+  height: 14px;
+  display:block;
+}
+
+.icon-equal-hc:hover {
+   background-position: 0px -14px;
+}
+
+
+body.highContrast {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+body.highContrast div,
+body.highContrast section,
+body.highContrast article,
+body.highContrast main,
+body.highContrast aside,
+body.highContrast header, 
+body.highContrast footer,
+body.highContrast ul{
+   background-color: #000000 !important;
+   color: #ffffff !important;
+   border-color: #ffffff !important;
+
+}
+
+body.highContrast nav{
+    border:1px solid green !important;
+    background-color:#000 !important;
+}
+
+body.highContrast input, 
+body.highContrast textarea{
+   background: #fff !important;
+   color: #000 !important;
+   border:1px solid #fff !important;
+}
+
+body.highContrast button{
+   background: #FFFF00 !important;
+   color: #000 !important;
+   border:1px solid #fff !important;
+}
+body.highContrast svg{
+   color: #fff !important;
+   background-color: #000 !important;
+    border:1px solid #fff;
+}
+body.highContrast img{
+    -webkit-filter: contrast(150%); /* Safari */
+    filter: contrast(150%);
+    background-image: filter contrast(150%);
+    -webkit-filter: contrast(150%);
+    -moz-filter: contrast(150%);
+    -o-filter: contrast(150%);
+    -ms-filter: contrast(150%);
+ 
+}
+body.highContrast a{
+   color: #FFFF00 !important;
+    background: #000000 !important;
+}
+body.highContrast a:hover{
+    color:#99E5FF;
+    text-decoration: underline;
+}
+
+body.highContrast label,
+body.highContrast li,
+body.highContrast p,
+body.highContrast td,
+body.highContrast th,
+body.highContrast span {
+    color: #ffffff;
+}
+
+
+body.highContrast abbr,
+body.highContrast acronym,
+body.highContrast code,
+body.highContrast h1,
+body.highContrast h2,
+body.highContrast h3,
+body.highContrast h4,
+body.highContrast h5,
+body.highContrast h6,
+body.highContrast input,
+body.highContrast select {
+	color: #FFFF00;
+}
+body.highContrast code,
+body.highContrast h1,
+body.highContrast fieldset,
+body.highContrast input,
+body.highContrast pre,
+body.highContrast select,
+body.highContrast td,
+body.highContrast th {
+	background: #000000 none;
+}
+
+  /* - HIGH CONTRAST - */
+
+  /* media querys */
+  /* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+  
+#accessibilityInfo, #acessibilityInfoBlock, #developmentByBlock, #acc-scroll-to-top {display: none;}
+  .acessivel_navbar ul{
+      display: inline;
+  }
+   .acessivel_navbar li{
+       display: block;
+       text-align: center;
+   }
+      .acessivel_navbar li a:hover{background-color: yellow;}
+      .toolbar-colorset2{background-color: yellow;color:#000;}
+      
+      .toolbar-colorset3{background-color: yellow;color:#000;}
+       #acc-scroll-to-top{display: none important!;}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px) {
+   #accessibilityInfo, #acessibilityInfoBlock, #developmentByBlock, #acc-scroll-to-top {display: inline;}
+    #acc-scroll-to-top{display: block important!;}
+    .acessivel_navbar ul{display: flex; }
+      .acessivel_navbar li{
+       display: block;
+      
+   }
+    .acessivel_navbar li a:hover{background-color: none;}
+    .toolbar-colorset2{background-color: none;color:#000;}
+    .toolbar-colorset3{background-color: none;color:#000;}
+    
+}

@@ -1,0 +1,70 @@
+body.highContrast {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+body.highContrast div{
+   background: #000000 !important;
+   color: #ffffff !important;
+   border-color: #ffffff !important;
+}
+body.highContrast input, textarea{
+   background: #fff !important;
+   color: #000 !important;
+   border:1px solid #fff !important;
+}
+
+body.highContrast button{
+   background: #FFFF00 !important;
+   color: #000 !important;
+   border:1px solid #fff !important;
+}
+body.highContrast svg{
+   color: #fff !important;
+   background-color: #000 !important;
+    border:1px solid #fff;
+}
+body.highContrast img{
+    -webkit-filter: contrast(150%); /* Safari */
+    filter: contrast(150%);
+}
+body.highContrast a{
+   color: #99ff00 !important;
+    background: #000000 !important;
+}
+body.highContrast a:hover{
+    color:#99E5FF;
+    text-decoration: underline;
+}
+
+body.highContrast label,
+body.highContrast li,
+body.highContrast p,
+body.highContrast td,
+body.highContrast th,
+body.highContrast span {
+    color: #ffffff;
+}
+
+
+body.highContrast abbr,
+body.highContrast acronym,
+body.highContrast code,
+body.highContrast h2,
+body.highContrast h3,
+body.highContrast h4,
+body.highContrast h5,
+body.highContrast h6,
+body.highContrast input,
+body.highContrast select {
+	color: #99ff00;
+}
+body.highContrast code,
+body.highContrast h1,
+body.highContrast fieldset,
+body.highContrast input,
+body.highContrast pre,
+body.highContrast select,
+body.highContrast td,
+body.highContrast th {
+	background: #000000 none;
+}
